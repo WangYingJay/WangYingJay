@@ -1,16 +1,20 @@
-### Hi there 👋
+# 欢迎来到英杰的主页👏
 
-<!--
-**WangYingJay/WangYingJay** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+#### 💡技能标签
 
-Here are some ideas to get you started:
+ `JavaScript` `html`  `css` `css3` `es6` `Vue2` `Vue3` `Element` `vant` `sass` `less` `stylus` `Git` `TypeScript` `h5` `web` 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### 👤个人简介
+
+一个卑微的代码搬运工......
+
+**联系方式**
+
+个人邮箱：code_yingjie@163.com
+
+<img src="/Users/wangyingjie/Downloads/IMG_4300.jpg" alt="IMG_4300" style="zoom:25%;" />
+
+
+
+
+
