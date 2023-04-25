@@ -2,7 +2,7 @@
 
 #### 💡技能标签
 
- `JavaScript` `html`  `css` `css3` `es6` `Vue2` `Vue3` `Element` `vant` `sass` `less` `stylus` `Git` `TypeScript` `h5` `web`  `node` 
+ `JavaScript` `html`  `css` `css3` `es6` `Vue2` `Vue3` `Element` `vant` `sass` `less` `stylus` `Git` `TypeScript` `h5` `web`  `node` `typeJavaScript` 
 
 #### 👤个人简介
 
