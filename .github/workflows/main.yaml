@@ -32,4 +32,4 @@ jobs:
         git branch -a
         git add -a
         git commit -m "Add contributions.png"
-        git push origin ${{ env.GITHUB_REF }}
+        git push origin main
