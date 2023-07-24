@@ -32,3 +32,5 @@
   <source media="(prefers-color-scheme: dark)" srcset="./dist/github-user-contribution-dark.svg" />
   <img alt="github-snake" src="./dist/github-snake.svg" />
 </picture>
+
+![contributions.png](./dist/contributions.png)

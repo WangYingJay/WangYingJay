@@ -27,31 +27,24 @@ def get_user_contributions(username, token):
         return []
 
 
-def plot_contributions(contributions):
+def plot_contributions(contributions, output_file):
     plt.plot(contributions, color="green")
     plt.xlabel("Day of the Year")
     plt.ylabel("Number of Contributions")
     plt.title("GitHub Contributions")
-    plt.show()
+    # plt.show()
+    plt.savefig(output_file)
+    plt.close()
 
 def main():
     username = "WangYingJay"
     token = os.environ.get('GITHUB_TOKEN')
-    print('token')
-    print('token')
-    print('token')
-    print('token')
-    print('token')
-    print(token)
-    print('token')
-    print('token')
-    print('token')
-    print('token')
-    print('token')
-
     contributions = get_user_contributions(username, token)
     if contributions:
-        plot_contributions(contributions)
+        # plot_contributions(contributions)
+        output_directory = 'dist'
+        output_file = os.path.join(output_directory, "contributions.png")
+        plot_contributions(contributions, output_file)
 
 
 if __name__ == "__main__":
