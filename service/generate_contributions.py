@@ -37,7 +37,7 @@ def plot_contributions(contributions):
 def main():
     username = "WangYingJay"
     token = os.environ.get('GITHUB_TOKEN')
-    print(token)
+    print('token' + token)
 
     contributions = get_user_contributions(username, token)
     if contributions:
