@@ -10,29 +10,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x' # 替换为你想要使用的Python版本
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x" # 替换为你想要使用的Python版本
 
-    - name: Install dependencies
-      run: pip install -r package/requirements.txt # 替换为你的依赖安装命令
+      - name: Install dependencies
+        run: pip install -r package/requirements.txt # 替换为你的依赖安装命令
 
-    - name: Run script to generate contributions
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: python3 service/generate_contributions.py
+      - name: Run script to generate contributions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 service/generate_contributions.py
 
-    - name: Save Contributions Image
-      run: |
-        cd $GITHUB_WORKSPACE
-        git config user.name "WangYingJay"
-        git config user.email "code_yingjie@163.com"
-        git remote -v
-        git branch -a
-        git add .
-        git commit -m "docs: 更新贡献图"
-        git push -u origin main
+      - name: Save Contributions Image
+        run: |
+          cd $GITHUB_WORKSPACE
+          git config user.name "WangYingJay"
+          git config user.email "code_yingjie@163.com"
+          git remote -v
+          git branch -a
+          git add .
+          git commit -m "docs: 更新贡献图"
+          git push -u origin main
