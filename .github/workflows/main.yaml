@@ -35,4 +35,4 @@ jobs:
         git branch -a
         git add .
         git commit -m "docs: 更新贡献图"
-        git push
+        git push -u origin main
