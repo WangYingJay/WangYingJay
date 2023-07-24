@@ -42,7 +42,7 @@ def main():
     contributions = get_user_contributions(username, token)
     if contributions:
         # plot_contributions(contributions)
-        output_directory = '/'
+        output_directory = ''
         output_file = os.path.join(output_directory, "contributions.png")
         plot_contributions(contributions, output_file)
 
