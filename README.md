@@ -17,9 +17,12 @@
 - 打包工具：`Webpack` | `Vite`
 - 文档工具：`Vitepress`
 
+## 项目经验
+
+[dk-plus](dk-plus.com/en)
+
 ## 联系我 📮
 
-- GitHub: [点击跳转至主页](https://github.com/WangYingJay)
 - Email: code_yingjie@163.com
 
 欢迎与我交流和合作！🤝
