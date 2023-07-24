@@ -26,3 +26,6 @@
 - Email: code_yingjie@163.com
 
 欢迎与我交流和合作！🤝
+
+
+![](https://raw.githubusercontent.com/WangYingJay/main/assets/github-contribution-grid-snake.svg)
