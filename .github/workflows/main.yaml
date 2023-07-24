@@ -25,3 +25,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: python3 service/generate_contributions.py
+
+    - name: Save Contributions Image
+      uses: actions/upload-artifact@v2
+      with:
+        name: contributions
+        path: contributions.png
