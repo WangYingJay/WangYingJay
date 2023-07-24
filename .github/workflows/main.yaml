@@ -28,7 +28,6 @@ jobs:
 
     - name: Save Contributions Image
       run: |
-        mv contributions.png $GITHUB_WORKSPACE
         cd $GITHUB_WORKSPACE
         git config user.name "WangYingJay"
         git config user.email "code_yingjie@163.com"
