@@ -34,6 +34,6 @@ jobs:
         git remote add yingjay https://github.com/WangYingJay/WangYingJay.git
         git remote -v
         git branch -a
-        git add contributions.png
+        git add .
         git commit -m "Add contributions.png"
         git push yingjay main
