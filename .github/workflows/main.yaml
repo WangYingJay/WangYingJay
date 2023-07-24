@@ -19,9 +19,9 @@ jobs:
         python-version: '3.x' # 替换为你想要使用的Python版本
 
     - name: Install dependencies
-      run: pip install -r requirements.txt # 替换为你的依赖安装命令
+      run: pip install -r package/requirements.txt # 替换为你的依赖安装命令
 
     - name: Run script to generate contributions
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: python generate_contributions.py
+      run: python service/generate_contributions.py
