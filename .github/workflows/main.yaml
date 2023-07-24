@@ -1,0 +1,27 @@
+name: Generate Contributions
+
+on:
+  push:
+    branches:
+      - main # 替换为你的默认分支
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x' # 替换为你想要使用的Python版本
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt # 替换为你的依赖安装命令
+
+    - name: Run script to generate contributions
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: python ./python/generate_contributions.py
