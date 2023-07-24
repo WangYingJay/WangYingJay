@@ -19,7 +19,7 @@
 
 ## 项目经验
 
-[dk-plus](dk-plus.com/en)
+[dk-plus](https://dk-plus.com/en/)
 
 ## 联系我 📮
 
