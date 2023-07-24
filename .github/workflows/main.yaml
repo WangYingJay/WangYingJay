@@ -1,4 +1,4 @@
-name: Generate Contributions
+name: Create contribution image
 
 on: [push]
 
@@ -30,6 +30,6 @@ jobs:
         git config user.email "code_yingjie@163.com"
         git remote -v
         git branch -a
-        git add .
+        git add -a
         git commit -m "Add contributions.png"
-        git push origin main
+        git push origin ${{ env.GITHUB_REF }}
