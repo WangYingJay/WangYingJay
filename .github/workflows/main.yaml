@@ -30,6 +30,8 @@ jobs:
       run: |
         mv contributions.png $GITHUB_WORKSPACE
         cd $GITHUB_WORKSPACE
-        git add .
+        git config user.name "WangYingJay"
+        git config user.email "code_yingjie@163.com"
+        git add contributions.png
         git commit -m "Add contributions.png"
         git push origin main
