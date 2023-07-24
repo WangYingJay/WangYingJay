@@ -24,4 +24,4 @@ jobs:
     - name: Run script to generate contributions
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: python service/generate_contributions.py
+      run: python3 service/generate_contributions.py
