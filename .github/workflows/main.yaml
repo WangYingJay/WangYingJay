@@ -1,9 +1,6 @@
 name: Generate Contributions
 
-on:
-  push:
-    branches:
-      - main # 替换为你的默认分支
+on: [push]
 
 jobs:
   generate:
@@ -26,7 +23,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: python3 service/generate_contributions.py
 
-    - name: Save Contributions Image
+    - name: Save Image
       run: |
         cd $GITHUB_WORKSPACE
         git config user.name "WangYingJay"
