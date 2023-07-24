@@ -33,3 +33,4 @@ jobs:
         git add -a
         git commit -m "Add contributions.png"
         git push origin main
+ 
