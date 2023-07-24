@@ -27,7 +27,9 @@ jobs:
       run: python3 service/generate_contributions.py
 
     - name: Save Contributions Image
-      uses: actions/upload-artifact@v2
-      with:
-        name: contributions
-        path: contributions.png
+      run: |
+        mv contributions.png $GITHUB_WORKSPACE
+        cd $GITHUB_WORKSPACE
+        git add .
+        git commit -m "Add contributions.png"
+        git push origin main
