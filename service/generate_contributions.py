@@ -13,7 +13,6 @@ def get_user_contributions(username, token):
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         events = response.json()
-        print(events)
         contributions = [0] * 365
         for event in events:
             if event["type"] == "PushEvent":

@@ -28,9 +28,6 @@ jobs:
         cd $GITHUB_WORKSPACE
         git config user.name "WangYingJay"
         git config user.email "code_yingjie@163.com"
-        git remote -v
-        git branch -a
         git add .
         git commit -m "Add contributions.png"
         git push origin main
- 
