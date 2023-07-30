@@ -10,7 +10,7 @@ def get_user_contributions(username, token):
     headers = {"Authorization": f"token {token}"}
     url = f"https://api.github.com/users/{username}/events"
 
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers)  
     if response.status_code == 200:
         events = response.json()
         contributions = [0] * 365
