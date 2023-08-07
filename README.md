@@ -13,7 +13,7 @@
 - 组件库：`Element` | `Vant`
 - 样式预处理器：`Sass` | `Less` | `Stylus`
 - 数据可视化：`Echarts`
-- 后端技术：`Node.js`
+- 后端技术：`Node.js` | `PyThon`
 - 打包工具：`Webpack` | `Vite`
 - 文档工具：`Vitepress` 
   
