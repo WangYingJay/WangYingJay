@@ -24,10 +24,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 必须用个人 PAT，否则只能看到公开贡献，和主页「含私有贡献」的热力图对不上。
+      # 仓库 Secrets 配置 SNAKE_GITHUB_TOKEN（classic PAT，勾选 read:user；若仍偏少再加 repo）
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: WangYingJay
+          github_token: ${{ secrets.SNAKE_GITHUB_TOKEN || github.token }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
